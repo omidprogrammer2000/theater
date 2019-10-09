@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+p{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 26%;
+    font-size: 25px;
+    top: 99vh;
+    margin-left: 37%;
+    line-height: 25px;
+    transform: translateX(-50%);
+    animation: information 15s linear forwards;
+}
+img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+@keyframes information{
+    from{
+        transform:perspective(900px)rotateX(26deg) translateY(-500px);
+    }
+    to{
+        transform:perspective(900px)rotateX(26deg) translateY(-4000px);
+    }
+}
+div{
+    position: absolute;
+    width: 27%;
+    height: 60vh;
+    background-color: black;
+    margin-left: 49.7%;
+    transform: translateX(-50%);
+}
+h1{
+    color: white;
+    position: absolute;
+    margin-left:50%;
+    margin-top:50vh;
+    transform: translate(-50%,-50%) scale(0);
+    animation: creatorAnimation 5s 10s linear forwards;
+}
+h2{
+    color: white;
+    position: absolute;
+    margin-left:50%;
+    margin-top:50vh;
+    font-size: 30px;
+    transform: translate(-50%,-50%) scale(0);
+    animation: autorAnimation 2s 15s linear forwards;
+}
+@keyframes creatorAnimation{
+    0%{
+        transform:translate(-50%,-50%) scale(1.2);
+    }
+    20%{
+        transform: translate(-50%,-50%) scale(.7);
+    }
+    70%{
+        transform:translate(-50%,-50%) scale(0.7);
+    }
+    100%{
+        transform:translate(-50%,-50%) scale(0);
+    }
+}
+@keyframes autorAnimation{
+    from{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    to{
+        transform: translate(-50%,-50%) scale(.7);
+    }
+}
